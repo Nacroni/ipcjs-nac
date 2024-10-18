@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "An iPod Classic built for the web.",
   metadataBase: new URL(getRootAppUrl()),
   openGraph: {
-    url: "http://tannerv.com/ipod",
+    url: "https://ipcjs-nac.vercel.app/",
     title: "iPod.js",
     description: "An iPod Classic built for the web.",
     type: "website",

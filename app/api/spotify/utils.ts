@@ -9,14 +9,14 @@ export const getRootAppUrl = () => {
   const isDev = process.env.NODE_ENV === "development";
 
   const protocol = isDev ? "http" : "https";
-  const rootUrl = isDev ? `localhost:3000` : process.env.VERCEL_BASE_URL;
+  const rootUrl = isDev ? `ipcjs-nac-git-experimental-rlprojects.vercel.app` : process.env.VERCEL_BASE_URL;
 
   return `${protocol}://${rootUrl}`;
 };
 
 export const getSpotifyRedirectUri = () => {
   // Example: http://localhost:3000/ipod/callback
-  return `${getRootAppUrl()}/ipod`;
+  return `${getRootAppUrl()}`;
 };
 
 export const getSpotifyAuthorizationHeader = (
